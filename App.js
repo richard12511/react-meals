@@ -13,8 +13,8 @@ export default function App() {
       <StatusBar style='dark' />
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name='Recipe Categories' component={CategoriesScreen} />
-          <Stack.Screen name='Meals Overview' component={MealsOverviewScreen} />
+          <Stack.Screen name='Categories' component={CategoriesScreen} />
+          <Stack.Screen name='Meals' component={MealsOverviewScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

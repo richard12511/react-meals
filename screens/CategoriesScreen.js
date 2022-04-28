@@ -5,7 +5,7 @@ import { CATEGORIES } from '../data/dummy-data';
 export default function CategoriesScreen({ navigation }) {
   function renderCategoryGridTile(itemData) {
     function pressHandler() {
-      navigation.navigate('Meals Overview');
+      navigation.navigate('Meals', { categoryId: itemData.item.id });
     }
 
     return <CategoryGridTile title={itemData.item.title} color={itemData.item.color} onPress={pressHandler} />;
