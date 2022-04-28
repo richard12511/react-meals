@@ -9,7 +9,7 @@ function renderCategoryGridTile(itemData) {
 export default function CategoriesScreen() {
   return (
     <View>
-      <FlatList data={CATEGORIES} keyExtractor={item => item.id} renderItem={renderCategoryGridTile} />
+      <FlatList data={CATEGORIES} keyExtractor={item => item.id} renderItem={renderCategoryGridTile} numColumns={2} />
     </View>
   );
 }
