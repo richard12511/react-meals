@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { MEALS } from '../data/dummy-data';
 
 export default function MealDetailsScreen({ route, navigation }) {
-  const item = route.params.item;
+  const id = route.params.id;
+  const meal = MEALS.find(meal => meal.id === id);
   return (
     <View style={styles.container}>
-      <Text>{item.title}</Text>
+      <Text>{meal.title}</Text>
     </View>
   );
 }

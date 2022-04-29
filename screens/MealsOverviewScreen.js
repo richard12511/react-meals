@@ -11,7 +11,7 @@ export default function MealsOverviewScreen({ route, navigation }) {
 
   function renderMeal(itemData) {
     function pressHandler() {
-      navigation.navigate('MealDetails', { item: itemData.item });
+      navigation.navigate('MealDetails', { id: itemData.item.id });
     }
     return (
       <MealItem
